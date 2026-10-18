@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e6d5c8;
+}
+
+/* Phase 3: High Visibility Mode Overrides */
+body.high-visibility {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  font-size: 20px !important;
+}
+
+body.high-visibility .bg-brand-bg {
+  background-color: #000000 !important;
+}
+
+body.high-visibility .bg-brand-card {
+  background-color: #000000 !important;
+  border-color: #ffffff !important;
+}
+
+body.high-visibility .text-brand-text-primary {
+  color: #ffffff !important;
+}
+
+body.high-visibility .text-brand-text-secondary {
+  color: #ffffff !important;
+}
+
+body.high-visibility .text-brand-accent {
+  color: #ffff00 !important; /* Bright Yellow */
+}
+
+body.high-visibility .bg-brand-accent {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+}
+
+body.high-visibility .border-[#3a2f2c] {
+  border-color: #ffffff !important;
+}
+
+body.high-visibility .border-[#4a3f3c] {
+  border-color: #ffffff !important;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
